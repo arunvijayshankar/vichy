@@ -9,7 +9,7 @@ Vichy supports the following subset of operations supported on scull:
 - Read
 - Write
 
-Vichy supports global and persistent devices analogous to scull0 - scull3 (vichy has two devices by default, vichy0 and vichy1, by default). The other types of scull devices (scullpipe, sculluid) are not supported yet.
+Vichy supports global and persistent devices analogous to scull0 - scull3 (vichy has two devices by default, vichy0 and vichy1). The other types of scull devices (scullpipe, sculluid) are not supported yet.
 
 Another difference is the memory layout. In scull, each device is a linked list of structures, each of which points to a memory area of 4MB at most, though an array of a 1000 pointers, each pointing to a memory area of 4000 bytes. In vichy, each structure in the linked list making up the device points to just one memory area of 4000 bytes. This changes the implementation of data operations (read, write, trim) slightly.
 
