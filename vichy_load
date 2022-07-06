@@ -1,5 +1,5 @@
 #!/bin/sh
-# $Id: vichy.load,v 1.0 $
+# $Id: vichy_load,v 1.0 $
 module="vichy"
 device="vichy"
 mode="664"
